@@ -40,7 +40,6 @@ app.get("/", async (req, res) => {
     res.redirect(process.env.redirect_url);
   } catch (error) {
     console.error(`Error handling request:\n${error.stack}`);
-    res.status(500).send("Internal server error");
   }
 });
 
